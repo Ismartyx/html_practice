@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Spermatic Webpage</title>
+    <style>
+      .agree input:checked + label {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+
+    <hr width="80%" />
+    <hr width="70%" />
+    <hr width="60%" />
+    <hr width="50%" />
+    <hr width="40%" />
+    <hr width="30%" />
+    <hr width="20%" />
+    <hr width="10%" />
+
+    <div id="reg-form">
+      <form action="">
+        <label for="first-name">First-name:</label>
+        <input type="text" name="first-name" placeholder="Saeed" required />
+
+        <label for="last-name">last-name:</label>
+        <input type="text" name="last-name" placeholder="Oj" required />
+
+        <label for="email">email:</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="email@gmail.com"
+          required
+        />
+
+        <div>
+          <label for="Month">Month:</label>
+          <select name="Month">
+            <option value="0" selected disabled></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+        </div>
+        <div class="agree">
+          <label for="agree">I agree all condition of the form:</label>
+          <input id="agree" type="checkbox" name="agree" required />
+
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
